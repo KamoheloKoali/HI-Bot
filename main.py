@@ -3,7 +3,7 @@ from seleniumbase import SB # pip3 install seleniumbase
 
 url = "https://intranet.hbtn.io"# Replace with the actual URL
 
-student_email = "enter email" # actual stduent email
+student_email = "email" # actual stduent email
 
 password = "password" # password 
 
