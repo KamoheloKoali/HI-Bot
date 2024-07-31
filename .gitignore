@@ -1,1 +1,5 @@
 *__pycache__
+downloaded_files
+.pytest_cache
+.dist
+.env.local

@@ -1,5 +1,14 @@
 
 from seleniumbase import SB
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env.local
+load_dotenv(dotenv_path='.env.local')
+
+# Access variables
+db_password = os.getenv('DB_PASSWORD')
+secret_key = os.getenv('SECRET_KEY')
 
 url = "https://intranet.hbtn.io"# Replace with the actual URL
 
