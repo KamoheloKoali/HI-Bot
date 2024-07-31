@@ -7,8 +7,8 @@ import os
 load_dotenv(dotenv_path='.env.local')
 
 # Access variables
-db_password = os.getenv('DB_PASSWORD')
-secret_key = os.getenv('SECRET_KEY')
+password = os.getenv('PASSWORD')
+student_email = os.getenv('EMAIL')
 
 url = "https://intranet.hbtn.io"# Replace with the actual URL
 
