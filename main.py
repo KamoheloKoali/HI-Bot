@@ -1,19 +1,20 @@
 
 from seleniumbase import SB # pip3 install seleniumbase
 from dotenv import load_dotenv
+from create_repo import create_repo
+from create_files import get_files
 import os
 
 # Load environment variables from .env.local
 load_dotenv(dotenv_path='.env.local')
 
 # Access variables
-password = os.getenv('PASSWORD')
-student_email = os.getenv('EMAIL')
+password = os.getenv('STUDENT_PASSWORD')
+student_email = os.getenv('STUDENT_EMAIL')
 
-url = "https://intranet.hbtn.io/projects/current" # Replace with the actual URL
-
+url = "https://intranet.hbtn.io/" # intranet url
+github_repo = None
 """SB Manager using UC Mode for evading bot-detection."""
-# text = ''
 with SB(uc=True, demo=True) as sb:
     sb.uc_open_with_reconnect(url, reconnect_time=10)
     sb.uc_gui_click_captcha()
@@ -26,12 +27,14 @@ with SB(uc=True, demo=True) as sb:
     # text = sb.get_text("h3#student-home-current-project-title")
     # sb.post_message("text retrieved", duration=5)
     sb.click("div#student-switch-curriculum-dropdown")
-    sb.click("a[href='/curriculums/365/observe/37383']") 
-    sb.click("span[title='ES6 data manipulation']")
+    sb.click("a[href='/curriculums/382/observe/43898']") 
+    sb.click("div.project-actions")
+    github_repo = get_files(sb.get_page_source())
     # sb.assert_element("h3#student-home-current-project-title")
-    sb.sleep(4)
-
-
-# print(text)
+    sb.sleep(2)
 
     
+if github_repo is not None:
+    create_repo(github_repo)
+
+print(github_repo)
