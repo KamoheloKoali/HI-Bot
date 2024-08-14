@@ -35,7 +35,7 @@ Example:
 
 ![Example Screenshot](./img/image.png)
 
-in the repository, create a .env.local file and paste your student email and password
+in the repository, create a .env.local file and write your student email and password
 
 ``` bash
   STUDENT_PASSWORD="..."
