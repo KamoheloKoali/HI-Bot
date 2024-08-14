@@ -24,17 +24,12 @@ with SB(uc=True, demo=True) as sb:
     sb.type("input#user_password", password)
     sb.click("input.btn.btn-primary")
     sb.post_message("signed in", duration=5)
-    # text = sb.get_text("h3#student-home-current-project-title")
-    # sb.post_message("text retrieved", duration=5)
     sb.click("div#student-switch-curriculum-dropdown")
     sb.click("a[href='/curriculums/382/observe/43898']") 
     sb.click("div.project-actions")
     github_repo = get_files(sb.get_page_source())
-    # sb.assert_element("h3#student-home-current-project-title")
     sb.sleep(2)
 
     
-if github_repo is not None:
-    create_repo(github_repo)
-
-print(github_repo)
+# if github_repo is not None:
+#     create_repo(github_repo)
