@@ -1,7 +1,7 @@
 
 # HI-Bot (Holberton School Intranet Bot)
 
-HI-Bot is a bot meant to be used by Holberton School students. It goes onto the Holberton School Intranet with the aim of retrieving the name of the repository, directory and files needed for the current project and creates the directory and files found on the intranet under the specified repository.
+HI-Bot is a bot meant to be used by Holberton School students. It goes onto the Holberton School Intranet with the aim of retrieving the name of the repository, directory and files needed for the current project and creates the directory and files found on the intranet under the specified repository. This is to automate the creation of directories and files needed for a project.
 
 
 ## Install
