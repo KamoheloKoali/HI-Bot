@@ -15,7 +15,7 @@ student_email = os.getenv('STUDENT_EMAIL')
 url = "https://intranet.hbtn.io/" # intranet url
 github_repo = None
 """SB Manager using UC Mode for evading bot-detection."""
-with SB(uc=True, demo=True) as sb:
+with SB(uc=True) as sb:
     sb.uc_open_with_reconnect(url, reconnect_time=10)
     sb.uc_gui_click_captcha()
     sb.set_messenger_theme(location="top_left")

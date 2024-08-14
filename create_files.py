@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup as bs # pip3 install beautifulsoup4
 import os
 
+github_repo = None
+
 def get_files(source):
     """
     Get the names of the files listed in page source and create them in the specified GitHub repo.
@@ -15,7 +17,6 @@ def get_files(source):
     relative_repo_path = None
     target_repo_path = None
     
-    github_repo = None
     directory = None
     soup = bs(source, "html.parser")
     group_list = soup.select("div.list-group-item")
@@ -69,10 +70,16 @@ def create_file(file, directory=None, target_repo_path=None):
     else:
         file_path = os.path.join(target_repo_path, file)
     
+    readme_file = os.path.join(full_dir, "README.md")
     print(f"Creating file at: {file_path}")
     
     if os.path.exists(file_path):
         return None
     
-    with open(file_path, "w", encoding="utf-8") as f:
+    if not os.path.exists(readme_file):
+        with open(readme_file, "w", encoding="utf-8") as file:
+            file.write(f"<h1 align='center'>{directory}</h1>")
+        print(f"{readme_file} created successfully.")
+    
+    with open(file_path, "w", encoding="utf-8"):
         pass
