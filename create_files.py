@@ -3,6 +3,7 @@ import os
 
 github_repo = None
 
+
 def get_files(source):
     """
     Get the names of the files listed in page source and create them in the specified GitHub repo.
@@ -10,6 +11,7 @@ def get_files(source):
     Args:
         source (str): Page source of the Holberton School intranet (current project).
     """
+    
     # Get the directory where this script is located
     script_dir = os.path.dirname(os.path.abspath(__file__))
     
@@ -46,6 +48,7 @@ def get_files(source):
                             print("Please specify repository path")
                         
     return github_repo
+
 
 def create_file(file, directory=None, target_repo_path=None):
     """

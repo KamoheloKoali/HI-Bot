@@ -1,7 +1,7 @@
 
 from seleniumbase import SB # pip3 install seleniumbase
 from dotenv import load_dotenv
-from create_repo import create_repo
+# from create_repo import create_repo
 from create_files import get_files
 import os
 
@@ -14,6 +14,7 @@ student_email = os.getenv('STUDENT_EMAIL')
 
 url = "https://intranet.hbtn.io/" # intranet url
 github_repo = None
+
 """SB Manager using UC Mode for evading bot-detection."""
 with SB(uc=True) as sb:
     sb.uc_open_with_reconnect(url, reconnect_time=10)
