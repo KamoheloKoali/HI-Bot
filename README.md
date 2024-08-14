@@ -31,7 +31,9 @@ HI-Bot only works using Google Chrome, so please install if you do not already h
 
 In order for HI-Bot to create the directory and files in the repository defined on the Holberton School intranet correctly, the repository must be cloned locally and must be relative to the HI-Bot repository.
 
-Example: ![Example Screenshot](./img/image.png)
+Example: 
+
+![Example Screenshot](./img/image.png)
 
 in the repository, create a .env.local file and paste your student email and password
 
@@ -51,6 +53,16 @@ OR
 ``` bash
   python main.py
 ```
+
+Once you run it, it should open up a Google Chrome window. For HI-Bot to get past the Cloudflare CAPTCHA, it needs your help. All you need to do is take the Cloudflare CAPTCHA test.
+
+![CAPTCHA_test Screenshot](./img/CAPTCHA_test.png)
+![CAPTCHA_complete Screenshot](./img/CAPTCHA_complete.png)
+
+<i>
+<b>After that, you can leave everything to HI-Bot!</b>
+</i>
+
 ## Support
 
 For support, email kamohelokoali201@gmail.com or contact me using any of the social media profiles listed on my github profile.
