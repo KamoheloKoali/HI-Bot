@@ -35,7 +35,7 @@ Example:
 
 ![Example Screenshot](./img/image.png)
 
-in the repository, create a .env.local file and write your student email and password
+Inside HI-Bot's repository, create a .env.local file and write your student email and password
 
 ``` bash
   STUDENT_PASSWORD="..."
