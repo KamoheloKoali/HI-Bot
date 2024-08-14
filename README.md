@@ -42,7 +42,7 @@ in the repository, create a .env.local file and write your student email and pas
   STUDENT_EMAIL="..."
 ```
 
-you can then run HI-Bot using
+Inside HI-Bot's repository, you can then run HI-Bot using
 
 ``` bash
   python3 main.py
