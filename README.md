@@ -38,8 +38,8 @@ Example:
 Inside HI-Bot's repository, create a .env.local file and write your student email and password because they are needed to get through the login form.
 
 ``` bash
-  STUDENT_PASSWORD="..."
   STUDENT_EMAIL="..."
+  STUDENT_PASSWORD="..."
 ```
 
 Inside HI-Bot's repository, you can then run HI-Bot using
