@@ -27,7 +27,7 @@ Install dependencies
 
 ## Usage/Examples
 
-HI-Bot only works using Google Chrome, so please install if you do not already have it installed.
+<b><i>HI-Bot only works using Google Chrome</i></b>, so please install it if you do not already have it installed.
 
 In order for HI-Bot to create the directory and files in the repository defined on the Holberton School intranet correctly, the repository must be cloned locally and must be relative to the HI-Bot repository.
 
