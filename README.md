@@ -60,7 +60,7 @@ Once you run it, it should open up a Google Chrome window. For HI-Bot to get pas
 ![CAPTCHA_complete Screenshot](./img/CAPTCHA_complete.png)
 
 <i>
-<b>After that, you can leave everything to HI-Bot!</b>
+<b>After that, you can leave everything to HI-Bot!</b> Don't forget to leave a star🙂
 </i>
 
 ## Support
