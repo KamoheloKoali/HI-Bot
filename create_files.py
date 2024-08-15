@@ -103,5 +103,5 @@ def create_file(file, directory=None, target_repo_path=None):
         with open(file_path, "w", encoding="utf-8"):
             pass
     except Exception as e:
-        print(f"Error creating file: {e}")
+        print(f"Error creating file: {e}. Please make sure that the repository exists relative to HI-Bot's repository")
         return None
