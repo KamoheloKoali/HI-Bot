@@ -18,7 +18,7 @@ def create_repo(repo_name=None):
     """
     
     url = "https://github.com/" # github url
-    repositories_url = "https://github.com/KamoheloKoali?tab=repositories"
+    repositories_url = url
     
     """SB Manager using UC Mode for evading bot-detection."""
     with SB(uc=True, demo=True) as sb:
