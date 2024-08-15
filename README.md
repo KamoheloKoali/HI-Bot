@@ -45,7 +45,13 @@ Inside HI-Bot's repository, create a .env.local file and write your student emai
 Inside HI-Bot's repository, you can then run HI-Bot using
 
 ``` bash
-  python3 main.py
+  python3 main.py <enter which curriculum to go to(part 1, part 2 or part 3 e.t.c)>
+```
+
+Example:
+
+``` bash
+  python3 main.py part 3
 ```
 
 OR
