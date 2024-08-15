@@ -2,7 +2,7 @@
 from seleniumbase import SB # pip3 install seleniumbase
 from dotenv import load_dotenv
 # from create_repo import create_repo
-from create_files import get_files, test
+from create_files import get_files
 from parse_text import parse
 import os
 import sys
