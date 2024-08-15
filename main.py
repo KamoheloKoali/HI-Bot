@@ -2,8 +2,10 @@
 from seleniumbase import SB # pip3 install seleniumbase
 from dotenv import load_dotenv
 # from create_repo import create_repo
-from create_files import get_files
+from create_files import get_files, test
+from parse_text import parse
 import os
+import sys
 
 # Load environment variables from .env.local
 load_dotenv(dotenv_path='.env.local')
@@ -14,6 +16,9 @@ student_email = os.getenv('STUDENT_EMAIL')
 
 url = "https://intranet.hbtn.io/" # intranet url
 github_repo = None
+
+curriculum = sys.argv[1] + " " + sys.argv[2]
+
 
 """SB Manager using UC Mode for evading bot-detection."""
 with SB(uc=True) as sb:
@@ -26,7 +31,7 @@ with SB(uc=True) as sb:
     sb.click("input.btn.btn-primary")
     sb.post_message("signed in", duration=5)
     sb.click("div#student-switch-curriculum-dropdown")
-    sb.click("a[href='/curriculums/382/observe/43898']") 
+    sb.click(f"span:contains('{parse(curriculum)}')") 
     sb.click("div.project-actions")
     github_repo = get_files(sb.get_page_source())
     sb.sleep(2)
