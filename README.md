@@ -57,7 +57,7 @@ Example:
 OR
 
 ``` bash
-  python main.py
+  python main.py part 3
 ```
 
 Once you run it, it should open up a Google Chrome window. For HI-Bot to get past the Cloudflare CAPTCHA, it needs your help. All you need to do is take the Cloudflare CAPTCHA test.
