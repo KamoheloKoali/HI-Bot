@@ -50,7 +50,7 @@ Inside HI-Bot's repository, you can then run HI-Bot using
 Or
 
 ``` bash
-  python3 main.py <enter which curriculum to go to(part 1, part 2 or part 3 e.t.c)> <full path to installation directory for chrome>
+  python3 main.py <enter which curriculum to go to(part 1, part 2 or part 3 e.t.c)> <full path to installation directory for chrome... (optional)>
 ```
 
 Example:
@@ -59,10 +59,17 @@ Example:
   python3 main.py part 3 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ```
 
+``` bash
+  python3 main.py part 3
+```
+
 OR
 
 ``` bash
   python main.py part 3 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+```
+``` bash
+  python main.py part 3
 ```
 
 Once you run it, it should open up a Google Chrome window. For HI-Bot to get past the Cloudflare CAPTCHA, it needs your help. All you need to do is take the Cloudflare CAPTCHA test.
