@@ -12,7 +12,7 @@ chrome_path = find_chrome()
 
 if chrome_path is None:
     print(f"Could not find Google Chrome. \nIf you don't have it, please install it, but if you do have it, try running the Bot again with >>> python3(or python) main.py <curriculum you want> <full path to chrome installation directory on your computer>")
-    sys.exit(1)
+    
 
 # Load environment variables from .env.local
 try:
