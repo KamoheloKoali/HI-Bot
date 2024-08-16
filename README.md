@@ -47,7 +47,7 @@ Inside HI-Bot's repository, you can then run HI-Bot using
 ``` bash
   python3 main.py <enter which curriculum to go to(part 1, part 2 or part 3 e.t.c)>
 ```
-Or
+OR
 
 ``` bash
   python3 main.py <enter which curriculum to go to(part 1, part 2 or part 3 e.t.c)> <full path to installation directory for chrome... (optional)>
