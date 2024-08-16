@@ -11,7 +11,7 @@ from try_to_find_chrome import find_chrome
 chrome_path = find_chrome()
 
 if chrome_path is None:
-    print(f"Could not find Google Chrome. \nIf you don't have it, please install it, but if you do have it, try running the Bot again with >>> python3(or python) main.py <curriculum you want> <full path to chrome.exe on your computer>")
+    print(f"Could not find Google Chrome. \nIf you don't have it, please install it, but if you do have it, try running the Bot again with >>> python3(or python) main.py <curriculum you want> <full path to chrome installation directory on your computer>")
     sys.exit(1)
 
 # Load environment variables from .env.local
@@ -36,7 +36,7 @@ github_repo = None
 # Check for command-line arguments
 if len(sys.argv) < 3:
     print("Error: Curriculum argument missing.\n")
-    print("Example: \npython3 main.py <curriculum> <full path to chrome.exe... this one is optional>")
+    print("Example: \npython3 main.py <curriculum> <full path to chrome installation directory... this one is optional>")
     sys.exit(1)
 
 curriculum = sys.argv[1] + " " + sys.argv[2]

@@ -4,6 +4,7 @@ behave==1.2.6
 certifi==2024.7.4
 chardet==5.2.0
 charset-normalizer==3.3.2
+chromedriver-autoinstaller==0.6.4
 colorama==0.4.6
 cssselect==1.2.0
 exceptiongroup==1.2.2
