@@ -58,15 +58,12 @@ try:
             print(f"Error handling CAPTCHA: {e}")
             sys.exit(1)
 
-        sb.set_messenger_theme(location="top_left")
-        sb.post_message("SeleniumBase wasn't detected", duration=5)
-
         try:
             sb.type("input#user_login", student_email)
             sb.type("input#user_password", password)
             sb.click("input.btn.btn-primary")
         except Exception as e:
-            print(f"Error during login: {e}")
+            print(f"Error during login: {e}, please try again")
             sys.exit(1)
 
         sb.post_message("signed in", duration=5)
