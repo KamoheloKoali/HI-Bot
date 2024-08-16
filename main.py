@@ -36,10 +36,12 @@ github_repo = None
 # Check for command-line arguments
 if len(sys.argv) < 3:
     print("Error: Curriculum argument missing.\n")
-    print("Example: \npython3 main.py part 3")
+    print("Example: \npython3 main.py <curriculum> <full path to chrome.exe... this one is optional>")
     sys.exit(1)
 
 curriculum = sys.argv[1] + " " + sys.argv[2]
+if len(sys.argv) == 4:
+    chrome_path = sys.argv[3]
 
 """SB Manager using UC Mode for evading bot-detection."""
 try:
