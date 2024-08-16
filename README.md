@@ -38,8 +38,8 @@ Example:
 Inside HI-Bot's repository, create a .env.local file and write your student email and password because they are needed to get through the login form.
 
 ``` bash
-  STUDENT_PASSWORD="..."
   STUDENT_EMAIL="..."
+  STUDENT_PASSWORD="..."
 ```
 
 Inside HI-Bot's repository, you can then run HI-Bot using
@@ -57,7 +57,7 @@ Example:
 OR
 
 ``` bash
-  python main.py
+  python main.py part 3
 ```
 
 Once you run it, it should open up a Google Chrome window. For HI-Bot to get past the Cloudflare CAPTCHA, it needs your help. All you need to do is take the Cloudflare CAPTCHA test.
