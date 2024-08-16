@@ -5,6 +5,14 @@ from create_files import get_files
 from parse_text import parse
 import os
 import sys
+from try_to_find_chrome import find_chrome
+
+# try to find chrome
+chrome_path = find_chrome()
+
+if chrome_path is None:
+    print(f"Could not find Google Chrome. \nIf you don't have it, please install it, but if you do have it, try running the Bot again with >>> python3(or python) main.py <curriculum you want> <full path to chrome.exe on your computer>")
+    sys.exit(1)
 
 # Load environment variables from .env.local
 try:
@@ -35,7 +43,7 @@ curriculum = sys.argv[1] + " " + sys.argv[2]
 
 """SB Manager using UC Mode for evading bot-detection."""
 try:
-    with SB(uc=True) as sb:
+    with SB(uc=True, binary_location=chrome_path) as sb:
         try:
             sb.uc_open_with_reconnect(url, reconnect_time=10)
         except Exception as e:
