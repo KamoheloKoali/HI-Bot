@@ -1,7 +1,7 @@
 
 # HI-Bot (Holberton School Intranet Bot)
 
-HI-Bot is a bot meant to be used by Holberton School students. It goes onto the Holberton School Intranet with the aim of retrieving the name of the repository, directory and files needed for the current project and creates the directory and files found on the intranet under the specified repository. This is to automate the creation of directories and files needed for a project.
+HI-Bot is an automation tool designed for Holberton School students. It retrieves the required repository, directory, and file names for your current project from the Holberton School Intranet and automatically creates the necessary directory structure in your local environment.
 
 
 ## Install
@@ -16,6 +16,13 @@ Go to the project directory
 
 ```bash
   cd HI-Bot
+```
+
+Create a virtual environment (optional but recommended)
+
+```bash
+  python3 -m venv venv
+  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
 Install dependencies
@@ -35,41 +42,26 @@ Example:
 
 ![Example Screenshot](./img/image.png)
 
-Inside HI-Bot's repository, create a .env.local file and write your student email and password because they are needed to get through the login form.
+Create a .env.local file inside HI-Bot's repository to store your student email and password, which are required for logging into the Holberton School Intranet.
 
 ``` bash
-  STUDENT_EMAIL="..."
-  STUDENT_PASSWORD="..."
+  STUDENT_EMAIL="your_email@example.com"
+  STUDENT_PASSWORD="your_password"
 ```
 
-Inside HI-Bot's repository, you can then run HI-Bot using
+You can run HI-Bot with the following command. The Chrome installation path is optional unless Chrome is installed in a non-default location.
 
 ``` bash
-  python3 main.py <enter which curriculum to go to(part 1, part 2 or part 3 e.t.c)>
+  python3 main.py <curriculum part> [path to Chrome installation (optional)]
 ```
-OR
-
-``` bash
-  python3 main.py <enter which curriculum to go to(part 1, part 2 or part 3 e.t.c)> <full path to installation directory for chrome... (optional)>
-```
-
 Example:
-
-``` bash
-  python3 main.py part 3 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-```
 
 ``` bash
   python3 main.py part 3
 ```
 
-OR
-
 ``` bash
-  python main.py part 3 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-```
-``` bash
-  python main.py part 3
+  python3 main.py part 3 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ```
 
 Once you run it, it should open up a Google Chrome window. For HI-Bot to get past the Cloudflare CAPTCHA, it needs your help. All you need to do is take the Cloudflare CAPTCHA test.
@@ -83,5 +75,7 @@ Once you run it, it should open up a Google Chrome window. For HI-Bot to get pas
 
 ## Support
 
-For support, email kamohelokoali201@gmail.com or contact me using any of the social media profiles listed on my github profile.
+For support, feel free to reach out via email at kamohelokoali201@gmail.com or through any of the social media platforms listed on my GitHub profile.
+
+Happy coding! 🚀
 
