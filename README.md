@@ -66,6 +66,8 @@ Example:
 
 Once you run it, it should open up a Google Chrome window. For HI-Bot to get past the Cloudflare CAPTCHA, it needs your help. All you need to do is take the Cloudflare CAPTCHA test.
 
+<b>Note</b>: For Windows and MacOs users, this may not be necessary.
+
 ![CAPTCHA_test Screenshot](./img/CAPTCHA_test.png)
 ![CAPTCHA_complete Screenshot](./img/CAPTCHA_complete.png)
 

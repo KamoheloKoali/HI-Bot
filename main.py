@@ -40,7 +40,7 @@ if len(sys.argv) < 3:
     sys.exit(1)
 
 curriculum = sys.argv[1] + " " + sys.argv[2]
-if len(sys.argv) == 4:
+if len(sys.argv) == 4 and chrome_path is None:
     chrome_path = sys.argv[3]
 
 """SB Manager using UC Mode for evading bot-detection."""
